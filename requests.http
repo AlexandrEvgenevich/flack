@@ -1,0 +1,33 @@
+POST http://127.0.0.1:5000/notifications/post
+Content-Type: application/json
+
+{
+    "header": "rat",
+    "description": "ratratrat",
+    "owner": "rat"
+}
+
+###
+
+GET http://127.0.0.1:5000/notifications/1
+Content-Type: application/json
+
+###
+
+PATCH http://127.0.0.1:5000/notifications/1
+Content-Type: application/json
+
+{
+    "header": "cat",
+    "description": "catcatcat",
+    "owner": "cat"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/notifications/1
+Content-Type: application/json
+
+{
+    "id": "1"
+}
